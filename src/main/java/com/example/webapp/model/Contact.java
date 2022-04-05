@@ -11,11 +11,12 @@ import java.util.Date;
 @Data @AllArgsConstructor @NoArgsConstructor
 @Table(name = "contacts")
 public class Contact {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String prenom;
     private String nom;
-    private double numero;
+    private int numero;
 
     public void setId(Long id) {
         this.id = id;
@@ -29,7 +30,7 @@ public class Contact {
         this.nom = nom;
     }
 
-    public void setNumero(double numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
@@ -45,7 +46,7 @@ public class Contact {
         return nom;
     }
 
-    public double getNumero() {
+    public int getNumero() {
         return numero;
     }
 }

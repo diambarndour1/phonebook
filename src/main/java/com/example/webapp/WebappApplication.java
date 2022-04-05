@@ -13,15 +13,16 @@ public class WebappApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WebappApplication.class, args);
 	}
-	@Bean
+	/*@Bean
 	CommandLineRunner commandLineRunner(ContactRepository contactRepository){
 		return args -> {
-			//contactRepository.save(new Contact(5L,"Abdel","Abdelila",466));
-			contactRepository.save(new Contact(null,"fatou","ndiaye",4559));
+			contactRepository.save(new Contact(null,"Marie","Mairie",798565));
+			contactRepository.save(new Contact(null,"Luc","Durant",105641));
 			contactRepository.findAll().forEach(c->{
 				System.out.println(c.getNom());
 			});
 		};
-	}}
+	}*/
+}
 
 
